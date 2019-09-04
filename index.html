@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project Portfolio</title>
+    <title>Juan Zwarts Front End Web developer</title>
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
@@ -21,7 +21,7 @@
          <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
          <a class="nav-item nav-link" href="#about">About</a>
          <a class="nav-item nav-link" href="#Projects">Projects</a>
-         <a class="nav-item nav-link" href="#Contact">Contact</a>
+         <a class="nav-item nav-link" data-toggle="modal" data-target="#contact" href="#contact">Contact</a>
        </div>
      </div>
     </div>
@@ -109,7 +109,7 @@
       <img src="img/project-4.JPG" class="card-img-top pt-4" alt="My forth Project">
       <div class="card-body">
         <h5 class="card-title">Web Style Guide</h5>
-        <p class="card-text">This project tasked me to create my very own mini framework to aid me in styling future projects. I had to make use of <span class="badge badge-danger">SASS</span> to process my CSS</p>
+        <p class="card-text">This project tasked me to create my very own mini framework to aid me in styling future projects. I had to make use of <span class="badge badge-danger">SASS</span> to process my <span class="badge badge-info">CSS</span></p>
         <a href="projects/tech-project-4/style_guide_project_files-master/index.html" target="#" class="btn btn-primary">View Project</a>
       </div>
     </div>
@@ -150,9 +150,37 @@
 <!-- /Projects -->
 
 <!-- Contact -->
-<div id="contact" class="container-fluid bg-dark text-white mb-4">
-  <h1 class="">Contact</h1>
- </div>
+<div class="modal" id="contact" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Contact me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="h6">Need more information, please contact me by emailing me or you can find more information with the following links.</p>
+          <a class="pt-4 pb-4" href="mailto:juanzwarts@gmail.com">juanzwarts@gmail.com</a>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 <!-- /Contact -->
     
